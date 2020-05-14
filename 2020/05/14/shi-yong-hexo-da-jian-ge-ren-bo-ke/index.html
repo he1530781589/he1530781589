@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="使用Hexo搭建个人博客页面, 何敏的博客">
+    <meta name="keywords" content="使用hexo搭建个人博客, 何敏的博客">
     <meta name="description" content="喜欢历史、科技、游戏的程序猿">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>使用Hexo搭建个人博客页面 | 何敏的博客</title>
+    <title>使用hexo搭建个人博客 | 何敏的博客</title>
     <link rel="icon" type="image/png" href="/he1530781589/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/he1530781589/libs/awesome/css/all.css">
@@ -308,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/he1530781589/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/he1530781589/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">使用Hexo搭建个人博客页面</h1>
+                    <h1 class="description center-align post-title">使用hexo搭建个人博客</h1>
                 </div>
             </div>
         </div>
@@ -454,7 +454,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-13
+                    2020-05-14
                 </div>
                 
 
@@ -470,7 +470,28 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="使用-Hexo-搭建个人博客"><a href="#使用-Hexo-搭建个人博客" class="headerlink" title="使用 Hexo 搭建个人博客"></a>使用 Hexo 搭建个人博客</h2>
+                <h1 id="使用hexo搭建个人博客页面"><a href="#使用hexo搭建个人博客页面" class="headerlink" title="使用hexo搭建个人博客页面"></a>使用hexo搭建个人博客页面</h1><h2 id="img"><a href="#img" class="headerlink" title="img"></a>img</h2><h3 id="普通插入方式"><a href="#普通插入方式" class="headerlink" title="普通插入方式"></a>普通插入方式</h3><p><code><img src="/he1530781589/2020/05/14/shi-yong-hexo-da-jian-ge-ren-bo-ke/11.png" class="" title="这是一张图片"></code></p>
+<img src="/he1530781589/2020/05/14/shi-yong-hexo-da-jian-ge-ren-bo-ke/11.png" class="" title="这是一张图片">
+
+<h3 id="html普通插入方式"><a href="#html普通插入方式" class="headerlink" title="html普通插入方式"></a>html普通插入方式</h3><p><code>&lt;img src=&quot;./11.png&quot; width = &quot;300&quot; height = &quot;200&quot; alt=&quot;图片名称&quot;/&gt;</code><br><img src="./11.png" width = "300" height = "200" alt="图片名称"/></p>
+<h3 id="html居右"><a href="#html居右" class="headerlink" title="html居右"></a>html居右</h3><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">align</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>right<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    &lt;img src="./11.png" width = "300" height = "200" alt="图片名称"/>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<div align="right"><img src="./11.png" width = "300" height = "200" alt="图片名称"/></div>
+
+<h3 id="引入外部图片"><a href="#引入外部图片" class="headerlink" title="引入外部图片"></a>引入外部图片</h3><pre><code>{% img http://inews.gtimg.com/newsapp_bt/0/11408905496/1000/0 200 300 %}</code></pre>{% img http://inews.gtimg.com/newsapp_bt/0/11408905496/1000/0 200 300 %}
+
+<h2 id="sql"><a href="#sql" class="headerlink" title="sql"></a>sql</h2><pre class=" language-sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> msys_user</code></pre>
+<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"hello word"</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>hello word<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
+<h3 id="javascript"><a href="#javascript" class="headerlink" title="javascript"></a>javascript</h3><pre class=" language-javascript"><code class="language-javascript">    <span class="token keyword">function</span> <span class="token function">hello</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>   </code></pre>
+
             </div>
             <hr/>
 
@@ -495,7 +516,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/he1530781589/he1530781589/2020/05/13/shi-yong-hexo-da-jian-ge-ren-bo-ke/">https://github.com/he1530781589/he1530781589/2020/05/13/shi-yong-hexo-da-jian-ge-ren-bo-ke/</a>
+                    <a href="https://github.com/he1530781589/he1530781589/2020/05/14/shi-yong-hexo-da-jian-ge-ren-bo-ke/">https://github.com/he1530781589/he1530781589/2020/05/14/shi-yong-hexo-da-jian-ge-ren-bo-ke/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -707,24 +728,27 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/he1530781589/2020/05/13/shi-yong-hexo-da-jian-ge-ren-bo-ke/">
+                <a href="/he1530781589/2020/05/14/shi-yong-hexo-da-jian-ge-ren-bo-ke/">
                     <div class="card-image">
                         
                         
-                        <img src="/he1530781589/medias/featureimages/9.jpg" class="responsive-img" alt="使用Hexo搭建个人博客页面">
+                        <img src="/he1530781589/medias/featureimages/10.jpg" class="responsive-img" alt="使用hexo搭建个人博客">
                         
-                        <span class="card-title">使用Hexo搭建个人博客页面</span>
+                        <span class="card-title">使用hexo搭建个人博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            使用 Hexo 搭建个人博客
+                            使用hexo搭建个人博客页面img普通插入方式
+
+
+html普通插入方式&lt;img src=&quot;./11.png&quot; width = &quot;300&quot; height = &quot;200&quot; al
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-14
                             </span>
                         <span class="publish-author">
                             
@@ -753,24 +777,27 @@
                 本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/he1530781589/2020/05/13/shi-yong-hexo-da-jian-ge-ren-bo-ke/">
+                <a href="/he1530781589/2020/05/14/shi-yong-hexo-da-jian-ge-ren-bo-ke/">
                     <div class="card-image">
                         
                         
-                        <img src="/he1530781589/medias/featureimages/9.jpg" class="responsive-img" alt="使用Hexo搭建个人博客页面">
+                        <img src="/he1530781589/medias/featureimages/10.jpg" class="responsive-img" alt="使用hexo搭建个人博客">
                         
-                        <span class="card-title">使用Hexo搭建个人博客页面</span>
+                        <span class="card-title">使用hexo搭建个人博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            使用 Hexo 搭建个人博客
+                            使用hexo搭建个人博客页面img普通插入方式
+
+
+html普通插入方式&lt;img src=&quot;./11.png&quot; width = &quot;300&quot; height = &quot;200&quot; al
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-14
                             </span>
                         <span class="publish-author">
                             
