@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="使用hexo搭建个人博客, 何敏的博客">
+    <meta name="keywords" content="Typora集成PicGo，让Markdown起飞, 何敏的博客">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>使用hexo搭建个人博客 | 何敏的博客</title>
+    <title>Typora集成PicGo，让Markdown起飞 | 何敏的博客</title>
     <link rel="icon" type="image/png" href="/he1530781589/favicon-rabbit.png">
 
     <link rel="stylesheet" type="text/css" href="/he1530781589/libs/awesome/css/all.css">
@@ -286,12 +286,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/he1530781589/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/he1530781589/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">使用hexo搭建个人博客</h1>
+                    <h1 class="description center-align post-title">Typora集成PicGo，让Markdown起飞</h1>
                 </div>
             </div>
         </div>
@@ -416,8 +416,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/he1530781589/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/he1530781589/tags/markdown/">
+                                <span class="chip bg-color">markdown</span>
                             </a>
                         
                     </div>
@@ -432,21 +432,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-05-13
+                    2020-05-17
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-05-14
+                    2020-05-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    62
+                    839
                 </div>
                 
 
@@ -463,22 +463,105 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="使用hexo搭建个人博客页面"><a href="#使用hexo搭建个人博客页面" class="headerlink" title="使用hexo搭建个人博客页面"></a>使用hexo搭建个人博客页面</h1><h2 id="img"><a href="#img" class="headerlink" title="img"></a>img</h2><h3 id="普通插入方式"><a href="#普通插入方式" class="headerlink" title="普通插入方式"></a>普通插入方式</h3><img src="/he1530781589/2020/05/13/shi-yong-hexo-da-jian-ge-ren-bo-ke/11.png" class="" title="这是一张图片 100 100">
+                <p><img src="http://qagmyq0a8.bkt.clouddn.com/20200517195636.png" alt="img"></p>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul>
+<li>hexo配合markdown遇到的问题:<ul>
+<li>自带的<code>{ asset_path slug }</code>,图片虽然可以查看,但是markdown编辑器却无法预览</li>
+<li><code>img</code>标签无法使用hexo的相对路径,文章后期位置调整很麻烦</li>
+<li>网络图片链接变更后,自己的文章图片将会失效</li>
+</ul>
+</li>
+<li>解决方案:<ul>
+<li>使用PicGo图床上传图片</li>
+<li>配置github、七牛云等图床简历存储仓库</li>
+<li>使用Typora整合PicGo简化图片上传步骤</li>
+</ul>
+</li>
+</ul>
+<h2 id="PicGo简介"><a href="#PicGo简介" class="headerlink" title="PicGo简介"></a>PicGo简介</h2><h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><p>一个用于快速上传图片并获取图片URL链接的工具</p>
+<p><img src="http://qagmyq0a8.bkt.clouddn.com/20200517201906.gif" alt="img"></p>
+<h3 id="文档地址"><a href="#文档地址" class="headerlink" title="文档地址"></a>文档地址</h3><p>[<a href="https://picgo.github.io/PicGo-Doc/zh/guide/" target="_blank" rel="noopener">https://picgo.github.io/PicGo-Doc/zh/guide/</a>)</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>下载地址:<a href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></p>
+<h3 id="配置github图床"><a href="#配置github图床" class="headerlink" title="配置github图床"></a>配置github图床</h3><h4 id="1-创建github仓库"><a href="#1-创建github仓库" class="headerlink" title="1.创建github仓库"></a>1.创建github仓库</h4><p><img src="http://qagmyq0a8.bkt.clouddn.com/20200517202734.png" alt="image-20200517202728000"></p>
+<h4 id="2-配置token"><a href="#2-配置token" class="headerlink" title="2.配置token"></a>2.配置token</h4><p>进入github配置token页面:<a href="https://github.com/settings/tokens,创建token,注意保存token,token只会展示一次">https://github.com/settings/tokens,创建token,注意保存token,token只会展示一次</a></p>
+<p><img src="http://qagmyq0a8.bkt.clouddn.com/20200517203049.png" alt="image-20200517203047190"></p>
+<h4 id="3-配置GitHub图床"><a href="#3-配置GitHub图床" class="headerlink" title="3.配置GitHub图床"></a>3.配置GitHub图床</h4><p>![image-20200517203244899](/Users/hemin/Library/Application Support/typora-user-images/image-20200517203244899.png)</p>
+<ul>
+<li>仓库名称配置为:账号/仓库名</li>
+<li>分之名称填写master</li>
+<li>token配置为刚才设置的token</li>
+<li>其他默认不填写</li>
+</ul>
+<p>配置好后就可以上传了,上传后可以复制链接到Markdown中使用</p>
+<h3 id="配置七牛云图床"><a href="#配置七牛云图床" class="headerlink" title="配置七牛云图床"></a>配置七牛云图床</h3><p>github图床虽然配置好,但是因为github服务器在国外,所以访问和上传都很慢,所以使用国内的七牛云是个不错的选择,七牛云有免费的10G空间,对于博客创作者还是非常友好的.</p>
+<h4 id="1-注册七牛云账号"><a href="#1-注册七牛云账号" class="headerlink" title="1.注册七牛云账号"></a>1.注册七牛云账号</h4><p>七牛云注册地址:<a href="https://portal.qiniu.com/signup?code=1hlfv5f8efqdu" target="_blank" rel="noopener">https://portal.qiniu.com/signup?code=1hlfv5f8efqdu</a></p>
+<h4 id="2-创建空间"><a href="#2-创建空间" class="headerlink" title="2.创建空间"></a>2.创建空间</h4><p>点击管理控制台 -&gt; 对象存储 -&gt; 空间管理 -&gt; 新建空间</p>
+<p><img src="http://qagmyq0a8.bkt.clouddn.com/20200517204848.png" alt="image-20200517204842963"></p>
+<ul>
+<li>指定空间名称</li>
+<li>区域选择离自己近的</li>
+<li>访问控制一定要选择公开,不然picgo无法访问</li>
+</ul>
+<h4 id="3-自定义域名"><a href="#3-自定义域名" class="headerlink" title="3.自定义域名"></a>3.自定义域名</h4><p>七牛的默认域名只有30天有效期,如果要长期使用,则需要自定义域名.</p>
+<h4 id="4-配置七牛云图床"><a href="#4-配置七牛云图床" class="headerlink" title="4.配置七牛云图床"></a>4.配置七牛云图床</h4><p><img src="http://qagmyq0a8.bkt.clouddn.com/20200517205016.png" alt="image-20200517205006616"></p>
+<ul>
+<li>AccessKey(AK)和SecretKey(SK)在个人中心 -&gt; 密钥管理 ,没有则创建</li>
+</ul>
+<p><img src="http://qagmyq0a8.bkt.clouddn.com/20200517205512.png" alt="image-20200517205204055"></p>
+<ul>
+<li>设定存储空间,为最初创建的空间名称</li>
+<li>访问地址为七牛云分配的外链域名,<strong>注意:配置时域名前要添加http://</strong></li>
+</ul>
+<p><img src="http://qagmyq0a8.bkt.clouddn.com/20200517205507.png" alt="image-20200517205501180"></p>
+<ul>
+<li>确认存储区域</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">存储区域</th>
+<th align="left">地域简称</th>
+<th align="left">上传域名</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">华东</td>
+<td align="left">z0</td>
+<td align="left">服务器端上传：<code>http(s)://up.qiniup.com</code> 客户端上传： <code>http(s)://upload.qiniup.com</code></td>
+</tr>
+<tr>
+<td align="left">华北</td>
+<td align="left">z1</td>
+<td align="left">服务器端上传：<code>http(s)://up-z1.qiniup.com</code> 客户端上传：<code>http(s)://upload-z1.qiniup.com</code></td>
+</tr>
+<tr>
+<td align="left">华南</td>
+<td align="left">z2</td>
+<td align="left">服务器端上传：<code>http(s)://up-z2.qiniup.com</code> 客户端上传：<code>http(s)://upload-z2.qiniup.com</code></td>
+</tr>
+<tr>
+<td align="left">北美</td>
+<td align="left">na0</td>
+<td align="left">服务器端上传：<code>http(s)://up-na0.qiniup.com</code> 客户端上传：<code>http(s)://upload-na0.qiniup.com</code></td>
+</tr>
+<tr>
+<td align="left">东南亚</td>
+<td align="left">as0</td>
+<td align="left">服务器端上传：<code>http(s)://up-as0.qiniup.com</code> 客户端上传：<code>http(s)://upload-as0.qiniup.com</code></td>
+</tr>
+</tbody></table>
+<p>配置好后就可以上传了</p>
+<h2 id="Typora整合PicGo"><a href="#Typora整合PicGo" class="headerlink" title="Typora整合PicGo"></a>Typora整合PicGo</h2><h3 id="整合PicGo"><a href="#整合PicGo" class="headerlink" title="整合PicGo"></a>整合PicGo</h3><h4 id="打开Typora的偏好设置"><a href="#打开Typora的偏好设置" class="headerlink" title="打开Typora的偏好设置"></a>打开Typora的偏好设置</h4><img src="http://qagmyq0a8.bkt.clouddn.com/20200517210454.png" alt="image-20200517210415548" style="zoom: 50%;" />
 
-<h3 id="html普通插入方式"><a href="#html普通插入方式" class="headerlink" title="html普通插入方式"></a>html普通插入方式</h3><img src="./11.png" width = "300" height = "200" alt="图片名称"/>
+<h4 id="配置PicGo"><a href="#配置PicGo" class="headerlink" title="配置PicGo"></a>配置PicGo</h4><p>选择图像 -&gt; 上传服务设定 -&gt; 选择PicGo.app -&gt; 验证图片上传选项 -&gt; 上传</p>
+<img src="http://qagmyq0a8.bkt.clouddn.com/20200517211116.png" alt="image-20200517210646898" style="zoom:50%;" />
 
-<h3 id="引入外部图片"><a href="#引入外部图片" class="headerlink" title="引入外部图片"></a>引入外部图片</h3><img src="http://inews.gtimg.com/newsapp_bt/0/11408905496/1000/0" class="" width="100" height="100">
-
-<h2 id="sql"><a href="#sql" class="headerlink" title="sql"></a>sql</h2><pre class=" language-sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> msys_user</code></pre>
-<h2 id="java"><a href="#java" class="headerlink" title="java"></a>java</h2><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"hello word"</span><span class="token punctuation">)</span>
-<span class="token punctuation">}</span></code></pre>
-<h2 id="html"><a href="#html" class="headerlink" title="html"></a>html</h2><pre class=" language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">></span></span>
-    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>hello word<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre>
-<h3 id="javascript"><a href="#javascript" class="headerlink" title="javascript"></a>javascript</h3><pre class=" language-javascript"><code class="language-javascript">    <span class="token keyword">function</span> <span class="token function">hello</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>msg<span class="token punctuation">)</span>
-    <span class="token punctuation">}</span>   </code></pre>
+<h3 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h3><p>配置好后就可以直接上传图片了,将图片拷贝到Typora中,选中图片右键上传,图片就直接上传到PicGo的图床上了.</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul>
+<li>了解了PicGo的使用方法</li>
+<li>使用Typora + PicGo上传图片,简化了图片的维护工作</li>
+<li>国内使用七牛云会比github要好</li>
+</ul>
 
             </div>
             <hr/>
@@ -504,7 +587,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://github.com/he1530781589/he1530781589/2020/05/13/shi-yong-hexo-da-jian-ge-ren-bo-ke/">https://github.com/he1530781589/he1530781589/2020/05/13/shi-yong-hexo-da-jian-ge-ren-bo-ke/</a>
+                    <a href="https://github.com/he1530781589/he1530781589/2020/05/17/typora-ji-cheng-picgo-rang-markdown-qi-fei/">https://github.com/he1530781589/he1530781589/2020/05/17/typora-ji-cheng-picgo-rang-markdown-qi-fei/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -542,8 +625,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/he1530781589/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
+                                <a href="/he1530781589/tags/markdown/">
+                                    <span class="chip bg-color">markdown</span>
                                 </a>
                             
                         </div>
@@ -711,9 +794,61 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/he1530781589/2020/05/17/typora-ji-cheng-picgo-rang-markdown-qi-fei/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/he1530781589/medias/featureimages/8.jpg" class="responsive-img" alt="Typora集成PicGo，让Markdown起飞">
+                        
+                        <span class="card-title">Typora集成PicGo，让Markdown起飞</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+简介
+hexo配合markdown遇到的问题:
+自带的{ asset_path slug },图片虽然可以查看,但是markdown编辑器却无法预览
+img标签无法使用hexo的相对路径,文章后期位置调整很麻烦
+网络图片链接变更后,自己的
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            何敏
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/he1530781589/tags/markdown/">
+                        <span class="chip bg-color">markdown</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/he1530781589/2020/05/14/hexo-cha-ru-tu-pian/">
                     <div class="card-image">
@@ -731,61 +866,8 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-05-14
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            何敏
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/he1530781589/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/he1530781589/2020/05/13/shi-yong-hexo-da-jian-ge-ren-bo-ke/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/he1530781589/medias/featureimages/10.jpg" class="responsive-img" alt="使用hexo搭建个人博客">
-                        
-                        <span class="card-title">使用hexo搭建个人博客</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            使用hexo搭建个人博客页面img普通插入方式
-
-html普通插入方式
-
-引入外部图片
-
-sqlselect * from msys_user
-javapublic static void main(String[] args){
-    
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-05-14
                             </span>
                         <span class="publish-author">
                             
@@ -795,7 +877,6 @@ javapublic static void main(String[] args){
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
