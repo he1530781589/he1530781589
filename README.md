@@ -2,7 +2,7 @@
 
 - 🔭 I’m currently working on Suzhou
 - 🌱 I’m currently learning JavasSript
-- 😄 This is my [blob](https://www.cnblogs.com/hemin809/)
+- 😄 This is my [Blog](https://www.cnblogs.com/hemin809/)
 
 #
 
